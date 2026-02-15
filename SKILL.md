@@ -38,6 +38,15 @@ The user should fill in the PROMPT_TEMPLATE.md with:
 4. Any pre-existing research (optional)
 5. Tone and audience preferences
 
+**Example of good input** (Section 2 - The Assignment):
+> "Remote-first companies will outperform hybrid ones over the next decade, not because
+> remote work is inherently better, but because it forces written communication culture,
+> which compounds into better decision-making. The 'return to office' movement is
+> optimizing for short-term manager comfort at the cost of long-term organizational IQ."
+
+**Example of weak input** (not specific enough for the pipeline):
+> "I want to write about why remote work is good."
+
 ### The Pipeline
 
 **Phase 1: Deep Research** (3 parallel agents)
@@ -90,6 +99,12 @@ The pipeline is working when:
 - The evaluation panel identifies issues the author didn't see
 - Each iteration measurably improves scores
 - All panel scores are 7+ before publication clearance
+
+## Failure Modes & Recovery
+- **Research agents return surface-level results**: The topic may be too niche for web search. Ask the user to paste primary sources into Section 4 and re-run Phase 1.
+- **All 4 drafts sound the same**: The thesis may be too narrowly constrained. Relax tone/positioning instructions and re-run Phase 3.
+- **Panel scores plateau below 7 after 3 rounds**: Stop iterating. Present the best version with the panel's remaining concerns and let the user decide.
+- **Context window fills before Phase 5**: Save all files to disk after each phase. Start a new conversation, load research and architecture files, and resume from Phase 3.
 
 ## Notes
 - Total token usage is high (multiple agents, multiple iterations). Worth it for important pieces.

@@ -6,9 +6,9 @@ Fill in the sections below, then paste this entire document into Claude Code. Th
 
 ## 1. ABOUT YOU
 
-- **Name / X Handle**:
-- **Approximate follower count**:
-- **Professional role / background**:
+- **Name / X Handle**: [e.g., @yourhandle]
+- **Approximate follower count**: [e.g., 2,400 — this affects tone calibration]
+- **Professional role / background**: [e.g., "Fintech PM at a Series B startup" — establishes your credibility angle]
 - **Positioning goal**: What do you want to be known for after publishing this piece?
 - **Disclosure** (if any): Financial interests, affiliations, or conflicts to disclose at the end of the article. Leave blank if none.
 
@@ -17,6 +17,12 @@ Fill in the sections below, then paste this entire document into Claude Code. Th
 What are you arguing? Describe your thesis in 2-3 sentences.
 
 > [Write your thesis here. Be specific about what you believe and why you think the conventional wisdom is wrong.]
+
+**Example** (delete before submitting):
+> "Remote-first companies will outperform hybrid ones over the next decade, not because
+> remote work is inherently better, but because it forces written communication culture,
+> which compounds into better decision-making. The 'return to office' movement is
+> optimizing for short-term manager comfort at the cost of long-term organizational IQ."
 
 ## 3. YOUR INITIAL THINKING
 
@@ -27,6 +33,12 @@ List your early instincts, key arguments, data points you already know about, an
 - [Data point you've seen or suspect exists]
 - [Historical parallel you think is relevant]
 - [Angle you're curious about but haven't researched]
+
+**Example** (delete before submitting):
+- GitLab's all-remote handbook has 2,000+ pages of written process; their IPO valuation was 11x revenue vs. ~6x for comparable hybrid SaaS companies
+- I've seen data that async-first teams ship more features per engineer per quarter, but I don't remember the source — needs verification
+- Historical parallel: the shift from oral to written legal contracts in 17th-century England led to more reliable enforcement — similar dynamic?
+- Angle I haven't explored: does remote-first create selection bias by attracting more self-directed workers, and is that the real cause of outperformance?
 
 **Important**: Mark anything you're unsure about. The research agents will verify claims and find counter-evidence. It's better to include a hunch that gets disproven than to leave it out.
 
@@ -58,9 +70,9 @@ Paste any data points, sources, or research you've already verified. Include URL
 
 ---
 
-# PIPELINE INSTRUCTIONS
+# PIPELINE INSTRUCTIONS (for Claude — do not edit below this line)
 
-After filling in the sections above, the following pipeline runs automatically. You can review and provide feedback at any stage.
+> **You're done.** Everything below is instructions for Claude's pipeline. You don't need to read or modify any of it. Just paste this entire document (including everything below) into Claude Code and the pipeline runs automatically. You'll be asked for feedback between phases.
 
 ## PHASE 1: DEEP RESEARCH
 
